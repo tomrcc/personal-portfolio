@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Importing fonts example: */
+/* @layer base {
+    @font-face {
+        font-family: "Nunito";
+        src: url("/fonts/Nunito-VariableFont_wght.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Permanent Marker";
+        src: url("/fonts/PermanentMarker-Regular.ttf") format("truetype");
+    }
+} */
