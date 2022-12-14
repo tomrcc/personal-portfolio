@@ -1,0 +1,22 @@
+spec:
+  structures:
+    - content_blocks
+  label: Welcome
+  description: Welcome block
+  icon: pan_tool
+  tags: []
+
+blueprint:
+  content:
+    preHeading: ''
+    heading: ''
+    subHeading: ''
+    tagline: ''
+
+preview:
+  content:
+    preHeading: 'Hi, my name is'
+    heading: 'Tom Richardson'
+    subHeading: 'Web Developer'
+    tagline: 'I am currently a web development intern at CloudCannon. Interested in using web development in creative ways.'
+_inputs: {}

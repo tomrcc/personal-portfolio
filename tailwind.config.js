@@ -7,7 +7,10 @@ module.exports = {
             // sans: ["Nunito","sans-serif"],
             // serif: ["Permanent Marker", "serif"]
           },
-          colors: {},
+        colors: {
+          'custom-dark-purple': '#191523',
+          'custom-light-purple': '#6f5ed5',
+          },
         },
     },
     plugins: [],

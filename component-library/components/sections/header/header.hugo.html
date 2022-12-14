@@ -1,0 +1,12 @@
+<header
+  class="c-header absolute top-0 left-0 right-0 max-w-screen-xl mx-auto flex justify-between p-4 text-white"
+>
+  <div class="">Logo</div>
+  <nav>
+    <ul class="menu flex">
+      {{ range .content.links }}
+      <li class="px-3"><a id="nav__link" href="{{ .url }}">{{ .name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

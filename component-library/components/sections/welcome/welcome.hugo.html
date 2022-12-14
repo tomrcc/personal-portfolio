@@ -1,4 +1,14 @@
-<section class="c-welcome bg-slate-400 ">
-    <h1>{{ .heading }}</h1>
-    <p>{{ .content }}</p>
+<section
+  class="c-welcome max-w-screen-xl mx-auto min-h-screen flex justify-center items-center gap-6 text-stone-50"
+>
+  <div class="flex-col gap-11 max-w-l justify-center">
+    <p class="text-sm text-indigo-300 font-bold mb-3 mt-10">
+      {{ .content.preHeading }}
+    </p>
+    <h1 class="text-4xl md:text-7xl font-bold">{{ .content.heading }}</h1>
+    <p class="text-2xl md:text-5xl font-semibold">{{ .content.subHeading }}</p>
+    <p class="max-w-sm mt-2">{{ .content.tagline }}</p>
+    <button class="mt-4 bg-indigo-500 px-5 py-3 rounded-lg">Contact Me</button>
+  </div>
+  <img class="rounded-full" src="https://placekitten.com/200/200" />
 </section>
