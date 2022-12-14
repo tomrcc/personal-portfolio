@@ -2,7 +2,7 @@
   class="c-welcome max-w-screen-xl mx-auto min-h-screen flex justify-center items-center gap-6 text-stone-50"
   x-data="{mouseX: 0, mouseY: 0, styles: {}}"
   @mousemove="function($event) {
-    mouseX = ($event.clientX / 100) - 7 + 'px';
+    mouseX = ($event.clientX / 100) - 11 + 'px';
     mouseY = ($event.clientY / 100) - 3 + 'px';
     styles.transform = `translate(${mouseX}, ${mouseY})`
 }"
