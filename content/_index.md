@@ -15,7 +15,7 @@ content_blocks:
       preHeading: 'Hi, my name is'
       heading: 'Tom Richardson'
       subHeading: 'Web Developer'
-      tagline: 'I am currently a web development intern at CloudCannon, interested in using web development in creative ways.'
+      tagline: 'I am a web development intern at CloudCannon, interested in using web development in creative ways.'
   - _bookshop_name: sections/blog-preview
     content:
       section_title: 'Latest Writings'
