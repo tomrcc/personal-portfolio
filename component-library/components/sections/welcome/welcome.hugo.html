@@ -2,10 +2,10 @@
   class="c-welcome max-w-screen-xl mx-auto min-h-screen flex justify-center items-center gap-6 p-2 text-stone-50"
   x-data="{mouseX: 0, mouseY: 0, eyestyles: {},  headstyles: {}}"
   @mousemove="function($event) {
-    mouseX = ($event.clientX / 100) - 11;
-    mouseY = ($event.clientY / 100) - 3;
+    mouseX = ($event.clientX / 100) - 13;
+    mouseY = ($event.clientY / 120) - 5;
     eyestyles.transform = `translate(${mouseX}px, ${mouseY}px)`
-    headstyles.transform = `rotate(${mouseX}deg)`
+    headstyles.transform = `rotate(${mouseX / 2}deg)`
     headstyles.transformOrigin = 'center'
 }"
 >
