@@ -1,5 +1,5 @@
 ---
-title: post1
+title: Contact
 content_blocks:
   - _bookshop_name: sections/contact
     content:
