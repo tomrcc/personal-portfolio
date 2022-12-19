@@ -1,15 +1,6 @@
 ---
 title: post1
 content_blocks:
-  - _bookshop_name: sections/header
-    content:
-      links:
-        - name: Home
-          url: /
-        - name: Blog
-          url: /blog
-        - name: Contact
-          url: /contact
   - _bookshop_name: sections/contact
     content:
       image:
