@@ -4,6 +4,4 @@ title: First Post
 author: Gerard Hopper
 ---
 
-# Content here
-
 Some blog writing here

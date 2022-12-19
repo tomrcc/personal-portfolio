@@ -1,12 +1,12 @@
-<section class="text-white w-full h-full">
-  <h1>{{ .Title }}</h1>
-  <ul>
-    <div class="row">
-        {{ range (.Paginator 9).Pages }}
+<section class="max-w-screen-xl mx-auto p-2 text-white">
+  <h1 class="text-2xl md:text-4xl">{{ .Title }}</h1>
+  <ul class="max-w-xl mx-auto">
+        {{ range .Paginator.Pages }}
           <a href="{{ .RelPermalink }}">
-              <p>{{.Title}}</p>
+              <img src="{{ .Params.image.link }}" alt="{{ .Params.image.link }}" />
+              <h2>{{ .Title }}</h2>
+              <p>{{ .Params.description }}</p>
           </a>
-          {{ end }}
-    </div>
+        {{ end }}
   </ul>
 </section>
