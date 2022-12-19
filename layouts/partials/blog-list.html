@@ -1,0 +1,12 @@
+<section class="text-white w-full h-full">
+  <h1>{{ .Title }}</h1>
+  <ul>
+    <div class="row">
+        {{ range (.Paginator 9).Pages }}
+          <a href="{{ .RelPermalink }}">
+              <p>{{.Title}}</p>
+          </a>
+          {{ end }}
+    </div>
+  </ul>
+</section>
