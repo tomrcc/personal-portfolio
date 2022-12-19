@@ -8,23 +8,6 @@ content_blocks:
       subHeading: 'Web Developer'
       tagline: 'I am a web development intern at CloudCannon, interested in using web development in creative ways.'
   - _bookshop_name: sections/blog-preview
-    content:
-      section_title: 'Latest Writings'
-      featured_post_one:
-        title: 'My First Post'
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rerum tempore ipsam nesciunt eius officiis quae. Dicta temporibus deserunt in!'
-        image:
-          url: 'http://www.placekitten.com/600/300'
-      featured_post_two:
-        title: 'My Second Post'
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rerum tempore ipsam nesciunt eius officiis quae. Dicta temporibus deserunt in!'
-        image:
-          url: 'http://www.placekitten.com/100/50'
-      featured_post_three:
-        title: 'My Third Post'
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rerum tempore ipsam nesciunt eius officiis quae. Dicta temporibus deserunt in!'
-        image:
-          url: 'http://www.placekitten.com/100/100'
   - _bookshop_name: sections/contact
     content:
       image:

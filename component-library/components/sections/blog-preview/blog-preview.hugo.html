@@ -2,36 +2,13 @@
   class="pt-24 pb-48 px-5 max-w-screen-lg mx-auto flex-col w-full text-left items-center justify-center text-slate-50"
 >
   <h2 class="text-xl font-bold mb-2">{{ .content.section_title }}</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2">
-    <div class="flex-col">
-      <img
-        class="w-full max-h-full"
-        src="{{ .content.featured_post_one.image.url }}"
-      />
-      <div class="flex-col text-left p-2">
-        <h3>{{ .content.featured_post_one.title }}</h3>
-        <p>{{ .content.featured_post_one.description }}</p>
-        <p></p>
-      </div>
-    </div>
-    <div class="grid grid-cols-2">
-      <div class="flex-col mx-1">
-        <img class="w-full" src="{{ .content.featured_post_two.image.url }}" />
-        <div class="flex-col text-left p-2">
-          <h3>{{ .content.featured_post_two.title }}</h3>
-          <p>{{ .content.featured_post_two.description }}</p>
-        </div>
-      </div>
-      <div class="flex-col mx-1">
-        <img
-          class="w-full"
-          src="{{ .content.featured_post_three.image.url }}"
-        />
-        <div class="flex-col text-left p-2">
-          <h3>{{ .content.featured_post_three.title }}</h3>
-          <p>{{ .content.featured_post_three.description }}</p>
-        </div>
-      </div>
-    </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3">
+{{ range first 3 (where site.RegularPages "Section" "blog" ) }}
+  <a href="{{ .Permalink }}">
+    <img src="{{ .Params.image.link }}" />
+    <h3>{{ .Title }}</h3>
+    <p>{{ .Params.description }}</p>
+  </a>
+{{ end }}
   </div>
 </div>
