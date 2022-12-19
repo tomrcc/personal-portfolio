@@ -31,7 +31,7 @@ preview:
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rerum tempore ipsam nesciunt eius officiis quae. Dicta temporibus deserunt in!'
     image:
       url: 'http://www.placekitten.com/300/200'
-  featured_post_one:
+  featured_post_three:
     title: 'My Third Post'
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rerum tempore ipsam nesciunt eius officiis quae. Dicta temporibus deserunt in!'
     image:
