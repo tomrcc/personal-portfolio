@@ -1,0 +1,28 @@
+{{ with .Site.Data.nav }}
+  <footer
+    class="c-footer max-w-screen-xl min-h-max mx-3 xl:mx-auto flex justify-between px-1 py-8 text-indigo-200"
+  >
+    <div class="">
+      <ul class="flex border-b pb-4 border-indigo-200 text-center">
+        {{ range .socials }}
+          <li class="px-3">
+            <a id="nav__link" href="{{ .link }}"><img src="{{ .image }}" /></a>
+          </li>
+        {{ end }}
+      </ul>
+      <div class="self-end mt-4">Copyright {{ .copyright }} 2022</div>
+    </div>
+    <nav class="flex">
+      <ul class="flex-col text-right self-end">
+        {{ range .items }}
+          <li class="px-3 pt-3">
+            <a href="{{ .link }}">{{ .text }}</a>
+          </li>
+        {{ end }}
+        <li class="px-3 pt-3">
+          <a href="{{ .btn.link }}">{{ .btn.text }}</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+{{ end }}
