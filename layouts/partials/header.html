@@ -1,6 +1,3 @@
-{{ $permalink := .RelPermalink }}
-{{ $permalink := path.Join $permalink "/"}}
- {{ $current := . }}
 {{ with .Site.Data.nav }}
    <header class="sticky top-0 z-50 left-0 right-0">
       <div class="max-w-screen-xl mx-auto flex justify-between items-center min-h-max p-2 text-white">
