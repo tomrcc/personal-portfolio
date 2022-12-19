@@ -25,7 +25,17 @@ preview:
     title: 'My First Post'
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rerum tempore ipsam nesciunt eius officiis quae. Dicta temporibus deserunt in!'
     image:
-      url: 'http://www.placekitten.com/600/300'
+      url: 'http://www.placekitten.com/300/300'
+  featured_post_two:
+    title: 'My Second Post'
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rerum tempore ipsam nesciunt eius officiis quae. Dicta temporibus deserunt in!'
+    image:
+      url: 'http://www.placekitten.com/300/200'
+  featured_post_one:
+    title: 'My Third Post'
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima rerum tempore ipsam nesciunt eius officiis quae. Dicta temporibus deserunt in!'
+    image:
+      url: 'http://www.placekitten.com/300/200'
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
