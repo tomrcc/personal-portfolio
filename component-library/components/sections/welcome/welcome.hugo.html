@@ -1,15 +1,22 @@
 <section
   class="c-welcome max-w-screen-xl mx-auto min-h-screen flex justify-center items-center gap-6 p-2 text-stone-50"
-  x-data="{mouseX: 0, mouseY: 0, eyestyles: {},  headstyles: {}}"
+  x-data="{mouseX: 0, moveX: 0, mouseY: 0, moveY: 0, eyestyles: {},  headstyles: {}}"
   @mousemove="function($event) {
-    mouseX = ($event.clientX / 100) - 12;
-    mouseY = ($event.clientY / 120) - 2;
-    eyestyles.transform = `translate(${mouseX}px, ${mouseY}px)`
-    headstyles.transform = `rotate(${mouseX / 2}deg)`
+    mouseX = ($event.clientX / 1000) - 1.2;
+    mouseY = ($event.clientY / 1000) - 0.5;
+
+    function value_limit(val, min, max) {
+      return val < min ? min : (val > max ? max : val);
+    }
+
+    moveX = value_limit(mouseX, -.5, 0.3)
+    moveY = value_limit(mouseY, -0.25, 0.25)
+    eyestyles.transform = `translate(${moveX}vw, ${moveY}vh)`
+    headstyles.transform = `rotate(${mouseX * 3}deg)`
     headstyles.transformOrigin = 'center'
 }"
 >
-  <div class="flex-col gap-11 max-w-l justify-center">
+  <div class="flex-col max-w-l">
     <p class="text-sm text-indigo-300 font-bold mb-3 mt-10">
       {{ .content.preHeading }}
     </p>
