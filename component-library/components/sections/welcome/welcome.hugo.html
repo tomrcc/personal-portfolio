@@ -1,6 +1,6 @@
 <section
   class="c-welcome max-w-screen-xl mx-auto min-h-screen flex justify-center items-center gap-6 p-2 text-stone-50"
-  x-data="{mouseX: 0, moveX: 0, mouseY: 0, moveY: 0, eyestyles: {},  headstyles: {}}"
+  x-data="{mouseX: 0, moveX: 0, mouseY: 0, moveY: 0, eyeStyles: {},  headStyles: {}}"
   @mousemove="function($event) {
     mouseX = ($event.clientX / 1000) - 1.2;
     mouseY = ($event.clientY / 1000) - 0.5;
@@ -11,9 +11,9 @@
 
     moveX = value_limit(mouseX, -.5, 0.3)
     moveY = value_limit(mouseY, -0.25, 0.25)
-    eyestyles.transform = `translate(${moveX}vw, ${moveY}vh)`
-    headstyles.transform = `rotate(${mouseX * 3}deg)`
-    headstyles.transformOrigin = 'center'
+    eyeStyles.transform = `translate(${moveX}vw, ${moveY}vh)`
+    headStyles.transform = `rotate(${mouseX * 4}deg)`
+    headStyles.transformOrigin = 'center'
 }"
 >
   <div class="flex-col max-w-l">
@@ -38,7 +38,7 @@
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g :style="headstyles" id="avatar">
+    <g :style="headStyles" id="avatar">
       <g id="hair">
         <path
           id="hair_2"
@@ -234,7 +234,7 @@
           fill="white"
         />
         <path
-          :style="eyestyles"
+          :style="eyeStyles"
           id="lefteyeball"
           d="M89.13 204.54C96.492 204.54 102.46 198.572 102.46 191.21C102.46 183.848 96.492 177.88 89.13 177.88C81.768 177.88 75.8 183.848 75.8 191.21C75.8 198.572 81.768 204.54 89.13 204.54Z"
           fill="#181828"
@@ -263,7 +263,7 @@
           stroke-linejoin="round"
         />
         <path
-          :style="eyestyles"
+          :style="eyeStyles"
           id="righteyeball"
           d="M164.63 204.54C171.992 204.54 177.96 198.572 177.96 191.21C177.96 183.848 171.992 177.88 164.63 177.88C157.268 177.88 151.3 183.848 151.3 191.21C151.3 198.572 157.268 204.54 164.63 204.54Z"
           fill="#181828"
