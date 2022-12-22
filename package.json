@@ -14,7 +14,7 @@
     "bookshop": "npx @bookshop/browser@latest",
     "bookshop-update": "npx @bookshop/up@latest",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pagefind": "npx -y pagefind --source public --bundle-dir ../static/_pagefind"
+    "pagefind:dev": "npx -y pagefind --source public --bundle-dir ../static/_pagefind"
   },
   "repository": {
     "type": "git",
