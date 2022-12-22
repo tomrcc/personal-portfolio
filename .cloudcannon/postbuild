@@ -6,4 +6,4 @@ npm i
 npx "@bookshop/generate"
 
 # Index site with pagefind
-npm run pagefind 
+npx -y pagefind --source public
