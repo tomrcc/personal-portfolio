@@ -2,14 +2,12 @@
 title: Home
 content_blocks:
   - _bookshop_name: sections/welcome
-    content:
-      preHeading: 'Hi, my name is'
-      heading: 'Tom Richardson'
-      subHeading: 'Web Developer'
-      tagline: 'I am a web development intern at CloudCannon, interested in using web development in creative ways.'
-  - _bookshop_name: sections/blog-preview
-  - _bookshop_name: sections/contact
-    content:
-      image:
-        url: '/images/dunedin.jpg'
+    heading: Tom Richardson
+    sub_heading: Solutions Architect
+    welcome_text: "I am Solutions Architect for CloudCannon. At work, I craft solutions that help ease the transition to CloudCannon's CMS. Outside of work, I am interested in creative web development and animations."
+    button:
+      _bookshop_name: generic/button
+      button_link: "#contact"
+      button_target: "_self"
+      button_text: "Contact Me"
 ---

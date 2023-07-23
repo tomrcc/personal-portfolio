@@ -3,9 +3,7 @@
   {{- partial "head.html" . -}}
   <body class="bg-custom-dark-purple">
     <main>
-      {{ partial "header.html" . }}
       {{ block "main" . }}{{ end }}
-      {{ partial "footer.html" . }}
     </main>
   </body>
 </html>

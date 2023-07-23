@@ -7,16 +7,19 @@ spec:
   tags: []
 
 blueprint:
-  content:
-    preHeading: ''
-    heading: ''
-    subHeading: ''
-    tagline: ''
+  heading:
+  sub_heading:
+  welcome_text:
+  button: bookshop:generic/button
 
 preview:
-  content:
-    preHeading: 'Hi, my name is'
-    heading: 'Tom Richardson'
-    subHeading: 'Web Developer'
-    tagline: 'I am currently a web development intern at CloudCannon. Interested in using web development in creative ways.'
+  heading: 'Tom Richardson'
+  sub_heading: 'Solutions Architect'
+  welcome_text: 'I am Solutions Architect for CloudCannon. At work, I craft solutions that help ease the transition to CloudCannon's CMS. Outside work, I am interested in creative web development and animations.'
+  button:
+    _bookshop_name: generic/button
+    button_link: "#contact"
+    button_target: "_self"
+    button_text: "Contact Me"
+
 _inputs: {}
