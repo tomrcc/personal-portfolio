@@ -9,9 +9,8 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  content:
-    image:
-      url: 'https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/71fe09e2-9320-4f61-8eca-067243e2ef68.jpeg'
+  image:
+    url:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
