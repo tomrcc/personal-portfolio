@@ -1,46 +1,40 @@
+{{ $c := "c-contact" }}
+
 <section
   id="contact"
-  class=" max-w-screen-xl mx-auto min-h-screen flex justify-center items-center gap-6 p-2 relative dark:text-white"
->
+  class="max-w-screen-xl mx-auto min-h-screen grid grid-cols-2 gap-6 relative dark:text-white bg-orange-50/30 dark:bg-orange-50/10 ">
   <div
-    class="absolute -z-10 w-full h-full top-0 bg-cover bg-center bg-no-repeat opacity-70 bg-fixed"
-    style="background-image: url({{ .image.url }});"
-  ></div>
-
-  <form
-    class="p-8 rounded-md flex-col bg-orange-50/30 dark:bg-orange-50/10 mx-3 sm:mx-auto w-full"
-  >
+    class="absolute -z-10 w-full h-full top-0 bg-cover bg-center bg-no-repeat opacity-70 bg-fixed col-span-2"
+    style="background-image: url({{ .image.url }});">
+  </div>
+  <form class="p-8 rounded-md flex-col mx-3 sm:mx-auto w-full">
     <h2 class="text-3xl sm:text-4xl md:text-6xl font-semibold max-w-lg mb-8">Contact me</h2>
     <div class="flex-col max-w-lg">
       <label for="name" class="block text-white-700 font-bold mb-1">Name</label>
       <input
         id="name"
         type="text"
-        class="block relative left-2/4 -translate-x-2/4 w-full p-2 rounded-sm text-stone-600 outline "
+        class="block relative left-2/4 -translate-x-2/4 w-full p-2 rounded-sm text-stone-600 outline"
       />
     </div>
     <div class="flex-col items-start justify-start max-w-lg">
-      <label for="email" class="block mt-8 mb-1 text-white-700 font-bold"
-        >Email</label
-      >
+      <label for="email" class="block mt-8 mb-1 text-white-700 font-bold">Email</label>
       <input
         id="email"
         type="email"
-        class="block relative left-2/4 -translate-x-2/4 w-full p-2 rounded-sm text-stone-600 outline "
+        class="block relative left-2/4 -translate-x-2/4 w-full p-2 rounded-sm text-stone-600 outline"
         required
       />
     </div>
     <div class="flex-col items-start justify-start max-w-lg">
-      <label for="message" class="block mt-8 mb-1 text-white-700 font-bold"
-        >Message</label
-      >
+      <label for="message" class="block mt-8 mb-1 text-white-700 font-bold">Message</label>
       <textarea
         id="message"
         type="message"
         rows="8"
-        class="block relative left-2/4 -translate-x-2/4 w-full resize-none p-2 rounded-sm text-stone-600 outline "
-        required
-      ></textarea>
+        class="block relative left-2/4 -translate-x-2/4 w-full resize-none p-2 rounded-sm text-stone-600 outline"
+        required>
+      </textarea>
     </div>
     <div class="max-w-lg mt-8 text-stone-50">
       <button class="bg-indigo-500 px-10 py-2 rounded-lg" type="submit">
@@ -48,4 +42,14 @@
       </button>
     </div>
   </form>
+  <div class="{{ $c }}__logo-panel bg-orange-50/50 dark:bg-orange-50/5">
+    {{ with .logos }}
+      <ul>
+        {{ range . }}
+          <li class="logo-list-item-dark"><a href=""><img src="{{ .dark }}" alt=""></a></li>
+          <li class="logo-list-item-light"><a href=""><img src="{{ .light }}" alt=""></a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
 </section>

@@ -11,6 +11,11 @@ spec:
 blueprint:
   image:
     url:
+  logos:
+    - light: images/github-mark.png
+      dark: images/github-mark-white.png
+    - light: images/linkedin-logo.png
+      dark: images/linkedin-logo.png
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

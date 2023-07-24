@@ -15,7 +15,6 @@
 } */
 
 .toggle {
-  
   appearance: none;
   outline: none;
   cursor: pointer;
@@ -23,7 +22,7 @@
   --size: 1.75rem;
   width: var(--size);
   height: var(--size);
-  --ray-size: calc(var(--size) * -0.42);
+  --ray-size: calc(var(--size) * -0.45);
   --offset-orthogonal: calc(var(--size) * 0.60);
   --offset-diagonal: calc(var(--size) * 0.42);
 
@@ -31,7 +30,6 @@
   border-radius: 999px;
   color: hsl(240, 88%, 87%);
   background-color: transparent;
-
 
   transition: all 500ms;
 }

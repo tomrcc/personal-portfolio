@@ -1,3 +1,30 @@
+function toggleLogos() {
+  const htmlElement = document.querySelector("html");
+  const darkLogos = document.getElementsByClassName("logo-list-item-dark");
+  const lightLogos = document.getElementsByClassName("logo-list-item-light");
+  if(htmlElement.classList.value === 'dark'){        
+    for (let i = 0; i < darkLogos.length; i++) {
+      darkLogos[i].style.display = "block";
+    }
+    for (let i = 0; i < lightLogos.length; i++) {
+      lightLogos[i].style.display = "none";
+    }
+  } else {
+    for (let i = 0; i < lightLogos.length; i++) {
+      lightLogos[i].style.display = "block";
+    }
+    for (let i = 0; i < darkLogos.length; i++) {
+      darkLogos[i].style.display = "none";
+    }
+  }
+};
+
+function toggleDarkMode() {
+  const element = document.querySelector("html")
+  element.classList.toggle("dark");
+  toggleLogos();
+};
+
 function checkDarkMode() {
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
   console.log('Checking for appearance theme...')
@@ -17,6 +44,7 @@ function checkDarkMode() {
   
   // Whenever the user explicitly chooses to respect the OS preference
   localStorage.removeItem('theme')
-}
+};
 
 checkDarkMode();
+toggleLogos();
