@@ -2,7 +2,7 @@
 
 <section
   id="contact"
-  class="max-w-screen-xl mx-auto min-h-screen grid grid-cols-2 gap-6 relative dark:text-white bg-orange-50/30 dark:bg-orange-50/10 ">
+  class="max-w-screen-xl mx-auto min-h-screen grid md:grid-cols-2 gap-6 relative dark:text-white bg-orange-50/30 dark:bg-orange-50/10 ">
   <div
     class="absolute -z-10 w-full h-full top-0 bg-cover bg-center bg-no-repeat opacity-70 bg-fixed col-span-2"
     style="background-image: url({{ .image.url }});">
@@ -44,7 +44,7 @@
   </form>
   <div class="{{ $c }}__logo-panel bg-orange-50/50 dark:bg-orange-50/5">
     {{ with .logos }}
-      <ul>
+      <ul class="grid grid-cols-2">
         {{ range . }}
           <li class="logo-list-item-dark"><a href=""><img src="{{ .dark }}" alt=""></a></li>
           <li class="logo-list-item-light"><a href=""><img src="{{ .light }}" alt=""></a></li>

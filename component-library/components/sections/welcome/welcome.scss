@@ -1,9 +1,15 @@
 .c-welcome {
 
   &__slide-effect {
+    height: 2.25rem;
     position: relative;
     overflow: hidden;
-    height: 6rem;
+    @media only screen and (min-width: 640px){
+      height: 3.75rem;
+    }
+    @media only screen and (min-width: 768px){
+      height: 6rem;
+    }
   }
 
   &__heading {
@@ -11,7 +17,13 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     position: relative;
-    top: 6rem;
+    top: 2.25rem;
+    @media only screen and (min-width: 640px){
+      top: 3.75rem;
+    }
+    @media only screen and (min-width: 768px){
+      top: 6rem;
+    }
   }
   &__sub-heading {
     opacity: 0;
@@ -74,12 +86,31 @@
     scale: 1;
   }
 }
-
 @keyframes slideUp {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-6rem);
+    transform: translateY(-2.25rem);
+  }
+}
+@media only screen and (min-width: 640px){
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-3.75rem);
+    }
+  }
+}
+@media only screen and (min-width: 768px){
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-6rem);
+    }
   }
 }

@@ -19,5 +19,5 @@ content_blocks:
       - light: images/linkedin-logo.png
         dark: images/linkedin-logo.png
       - light: images/cloudcannon.png
-        dark: images/cloudcannon.png
+        dark: images/cloudcannon.pnge
 ---
