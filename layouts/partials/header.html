@@ -1,10 +1,11 @@
 {{ with .Site.Data.nav }}
    <header class="absolute top-0 z-50 left-0 right-0">
-      <div class="max-w-screen-xl mx-auto flex justify-between items-center min-h-max p-2 text-white">
+      <div class="max-w-screen-xl mx-auto flex justify-between items-center min-h-max p-2 dark:text-white">
          <a class="mx-2 py-1" href="/">
-            <img src="{{.logo}}" alt="Nav-Logo" />
+            Tom Richardson
          </a>
          <nav class="flex">
+            <!--
             <ul class="flex">
                {{ range .items }}
                   <li class="mx-2 py-1">
@@ -14,11 +15,14 @@
                   </li>
                {{ end }}
             </ul>
-            <div class="mx-2 border border-indigo-50 py-1 px-3">
-               {{ with .btn }}
-                  <a href="{{.link}}" class="">{{.text}}</a>
-               {{ end }}
-            </div>
+            -->
+            <script>
+               function toggleDark() {
+                  const element = document.querySelector("html")
+                  element.classList.toggle("dark");
+                }
+            </script>
+            <button onclick="toggleDark()">Light/Dark</button>
          </nav>
       </div>
    </header>

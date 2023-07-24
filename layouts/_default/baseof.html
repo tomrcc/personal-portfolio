@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   {{- partial "head.html" . -}}
-  <body class="bg-custom-dark-purple">
+  <body class="bg-white dark:bg-custom-dark-purple">
+    {{- partial "header.html" . -}}
     <main>
       {{ block "main" . }}{{ end }}
     </main>

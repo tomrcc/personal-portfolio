@@ -1,13 +1,4 @@
 ---
-logo: "/images/icons8-facebook-circled-48"
-items:
-  - link: "/"
-    text: "Home"
-  - link: "/blog/"
-    text: "Blog"
-btn:
-  link: "/contact/"
-  text: "Get Started"
 copyright: 'Tom Richardson'
 socials:
   - link: 'www.facebook.com' 

@@ -1,7 +1,7 @@
 {{ $c := "c-welcome" }}
 
 <section
-  class="{{ $c }} max-w-screen-xl mx-auto min-h-screen flex justify-center items-center gap-6 p-2 text-stone-50"
+  class="{{ $c }} max-w-screen-xl mx-auto min-h-screen flex justify-center items-center gap-6 p-2 dark:text-stone-50"
   x-data="{mouseX: 0, moveX: 0, mouseY: 0, moveY: 0, eyeStyles: {},  headStyles: {}}"
   @mousemove="function($event) {
     mouseX = ($event.clientX / 1000) - 1.2;
@@ -26,7 +26,7 @@
     </div>
     <p class="{{ $c }}__sub-heading text-4xl py-3 sm:text-6xl md:text-8xl font-semibold text-indigo-500">{{ .sub_heading }}</p>
     <p class="{{ $c }}__welcome-text max-w-2xl py-3 leading-relaxed font-extralight text-lg tracking-wider">{{ .welcome_text }}</p>
-    <div class="{{ $c }}__button">
+    <div class="{{ $c }}__button text-stone-50">
       {{ partial "bookshop" (slice "generic/button" .button )}}
     </div>
   </div>
